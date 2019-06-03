@@ -14,6 +14,8 @@ Qlikview
 ----------------
 Dataset :- AdventureWorks DataWarehouse
 ---------------
-1) Load adventureworksDW on SQL, transferring it onto Hive using sqoop.
+1) Load adventureworksDW on SQL, transferring it onto Hive using sqoop by command:-
+   sqoop import --connect jdbc:mysql://quickstart.cloudera/database_name --password cloudera --m 1 --hive-import --driver com.mysql.jdbc.Driver
+2) Load all tables from hive onto Kylin and create olap cubes according to specific requiremnents.
+3) Connect Qlikview and hive using jdbc driver nd create dashboards.
 
-2) Load all tables from hive onto Kylin
